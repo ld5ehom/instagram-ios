@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,10 +18,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" name="AccentColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="VWC-wr-NgB"/>
-                        <segue destination="bcf-bd-co8" kind="relationship" relationship="viewControllers" id="56f-iT-zOP"/>
+                        <segue destination="loH-a0-LOv" kind="relationship" relationship="viewControllers" id="56f-iT-zOP"/>
                         <segue destination="mCu-0b-0ja" kind="relationship" relationship="viewControllers" id="qVd-16-AbM"/>
                         <segue destination="fLv-eV-Vzp" kind="relationship" relationship="viewControllers" id="l5x-zl-bw0"/>
                         <segue destination="l1m-5q-pjn" kind="relationship" relationship="viewControllers" id="lnJ-w0-IMN"/>
@@ -30,10 +32,10 @@
             </objects>
             <point key="canvasLocation" x="130.53435114503816" y="-34.507042253521128"/>
         </scene>
-        <!--Search View Controller-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="SearchViewController" id="BYZ-38-t0r" customClass="SearchViewController" customModule="instagram_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchViewController" id="BYZ-38-t0r" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -46,21 +48,40 @@
             </objects>
             <point key="canvasLocation" x="131" y="704"/>
         </scene>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="xg7-Ht-wmo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="loH-a0-LOv" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="magnifyingglass" catalog="system" id="0pc-wI-7of"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3m2-5j-7SS">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bcf-bd-co8" kind="relationship" relationship="rootViewController" id="FLm-v2-sKv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nrr-3U-Wch" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1049.6183206106871" y="703.52112676056345"/>
+        </scene>
+        <!--Search View Controller-->
         <scene sceneID="gov-J7-bvK">
             <objects>
-                <viewController id="bcf-bd-co8" sceneMemberID="viewController">
+                <viewController id="bcf-bd-co8" customClass="SearchViewController" customModule="instagram_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zoa-Vr-DLh">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="8Ax-iu-6Kj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="magnifyingglass" catalog="system" id="0pc-wI-7of"/>
+                    <navigationItem key="navigationItem" id="h4K-xJ-eQz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="efx-4a-hek" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1050" y="704"/>
+            <point key="canvasLocation" x="1050" y="1418"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="8pT-JO-yIm">
@@ -76,7 +97,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R9e-AX-7vT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2679" y="704"/>
+            <point key="canvasLocation" x="3036" y="704"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="OAd-w7-9pq">
@@ -92,7 +113,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FM2-6H-zAj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1882" y="704"/>
+            <point key="canvasLocation" x="2033" y="704"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="6ke-Qy-Yf9">
@@ -108,7 +129,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j4k-Db-VE1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3550" y="704"/>
+            <point key="canvasLocation" x="4047" y="704"/>
         </scene>
     </scenes>
     <resources>
@@ -117,6 +138,9 @@
         <image name="person.crop.circle" catalog="system" width="128" height="123"/>
         <image name="play.circle" catalog="system" width="128" height="123"/>
         <image name="plus.app" catalog="system" width="128" height="114"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
