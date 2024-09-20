@@ -60,12 +60,12 @@ extension SearchViewController: UICollectionViewDataSource {
     
     // 각 셀에 표시할 내용을 구성하는 메서드
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        // 'ResultCell' 타입의 셀을 재사용 큐에서 가져옴
+        // 'ResultCell' 타입의 셀을 재사용 큐에서 가져옴(dequeue)
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ResultCell", for: indexPath) as? ResultCell else {
             // 셀이 없을 경우 기본 UICollectionViewCell 반환
             return UICollectionViewCell()
         }
-        // 아이템의 번호에 맞는 이미지 이름을 설정
+        // 아이템의 번호에 맞는 이미지 이름을 설정(0부터 시작해서 +1)
         let imageName = "animal\(indexPath.item + 1)"
         // 셀을 이미지 이름으로 구성
         cell.configure(imageName)
