@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB09D7DF2C9D48C4003A611F /* ResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB09D7DE2C9D48C4003A611F /* ResultCell.swift */; };
 		AB717C5D2C9AAF9A00606D36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB717C5C2C9AAF9A00606D36 /* AppDelegate.swift */; };
 		AB717C5F2C9AAF9A00606D36 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB717C5E2C9AAF9A00606D36 /* SceneDelegate.swift */; };
 		AB717C612C9AAF9A00606D36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB717C602C9AAF9A00606D36 /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB09D7DE2C9D48C4003A611F /* ResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCell.swift; sourceTree = "<group>"; };
 		AB717C592C9AAF9A00606D36 /* instagram-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "instagram-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB717C5C2C9AAF9A00606D36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB717C5E2C9AAF9A00606D36 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,11 +107,12 @@
 			isa = PBXGroup;
 			children = (
 				ABC6BDE92C9BB0B800B28FE7 /* Delegate */,
+				AB717C672C9AAF9C00606D36 /* LaunchScreen.storyboard */,
+				AB717C622C9AAF9A00606D36 /* Main.storyboard */,
 				AB717C602C9AAF9A00606D36 /* ViewController.swift */,
 				ABC6BDE72C9BB01400B28FE7 /* SearchViewController.swift */,
-				AB717C622C9AAF9A00606D36 /* Main.storyboard */,
+				AB09D7DE2C9D48C4003A611F /* ResultCell.swift */,
 				AB717C652C9AAF9C00606D36 /* Assets.xcassets */,
-				AB717C672C9AAF9C00606D36 /* LaunchScreen.storyboard */,
 				AB717C6A2C9AAF9C00606D36 /* Info.plist */,
 			);
 			path = "instagram-ios";
@@ -276,6 +279,7 @@
 				AB717C612C9AAF9A00606D36 /* ViewController.swift in Sources */,
 				AB717C5D2C9AAF9A00606D36 /* AppDelegate.swift in Sources */,
 				ABC6BDE82C9BB01400B28FE7 /* SearchViewController.swift in Sources */,
+				AB09D7DF2C9D48C4003A611F /* ResultCell.swift in Sources */,
 				AB717C5F2C9AAF9A00606D36 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,8 +468,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -492,8 +495,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
